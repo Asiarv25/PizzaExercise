@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Asia_R_Pizza_Exercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="easy-pepperoni-pizza-lead-4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="DCe-0z-3go">
+                                <rect key="frame" x="-39" y="0.0" width="471" height="576"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tzi-9X-vl1">
+                                <rect key="frame" x="-15" y="-15" width="466" height="249"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8NP-dv-CWp">
+                                    <rect key="frame" x="0.0" y="0.0" width="466" height="249"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="systemThinMaterialLight"/>
+                            </visualEffectView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fileadmin__processed__3_7_csm_0648_A4_Web_62782a12df.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="EPU-Zc-1iZ">
+                                <rect key="frame" x="0.0" y="233" width="432" height="663"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Rosco's Pizza" textAlignment="justified" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xoe-u1-KPf">
+                                <rect key="frame" x="29" y="53" width="356" height="161"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="161" id="Ily-yd-xDN"/>
+                                </constraints>
+                                <color key="textColor" red="0.75746842616580312" green="0.072999660198238517" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="60"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="gIw-8d-k9b">
+                                <rect key="frame" x="29" y="233" width="356" height="564"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Toppings" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bIL-hy-77Z">
+                                        <rect key="frame" x="38" y="154" width="97" height="34"/>
+                                        <color key="textColor" red="0.75746842619999999" green="0.072999660199999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Crust" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kc5-P6-ifZ">
+                                        <rect key="frame" x="217" y="154" width="97" height="34"/>
+                                        <color key="textColor" red="0.75746842619999999" green="0.072999660199999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="UX3-tp-BCK">
+                                        <rect key="frame" x="5" y="231" width="163" height="32"/>
+                                        <segments>
+                                            <segment title="Pepperoni"/>
+                                            <segment title="Sausage"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nNr-k4-fKQ">
+                                        <rect key="frame" x="208" y="231" width="131" height="32"/>
+                                        <segments>
+                                            <segment title="Thin"/>
+                                            <segment title="Stuffed"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="UX3-tp-BCK" firstAttribute="baseline" secondItem="nNr-k4-fKQ" secondAttribute="baseline" id="1h3-0E-zK4"/>
+                                    <constraint firstItem="bIL-hy-77Z" firstAttribute="baseline" secondItem="Kc5-P6-ifZ" secondAttribute="baseline" id="8SN-a7-h8D"/>
+                                    <constraint firstItem="TXi-OB-kyb" firstAttribute="trailing" secondItem="Kc5-P6-ifZ" secondAttribute="trailing" constant="42" id="EK4-zi-lai"/>
+                                    <constraint firstItem="Kc5-P6-ifZ" firstAttribute="leading" secondItem="bIL-hy-77Z" secondAttribute="trailing" constant="82" id="HrQ-ed-F7v"/>
+                                    <constraint firstItem="bIL-hy-77Z" firstAttribute="centerX" secondItem="UX3-tp-BCK" secondAttribute="centerX" id="QBz-Bl-blt"/>
+                                    <constraint firstAttribute="trailing" secondItem="nNr-k4-fKQ" secondAttribute="trailing" constant="17" id="Tos-C2-6Vy"/>
+                                    <constraint firstItem="bIL-hy-77Z" firstAttribute="leading" secondItem="TXi-OB-kyb" secondAttribute="leading" constant="38" id="VXR-Aa-xcL"/>
+                                    <constraint firstItem="nNr-k4-fKQ" firstAttribute="leading" secondItem="UX3-tp-BCK" secondAttribute="trailing" constant="40" id="ex0-I7-N6Y"/>
+                                    <constraint firstItem="UX3-tp-BCK" firstAttribute="leading" secondItem="TXi-OB-kyb" secondAttribute="leading" constant="5" id="gqh-lX-2jN"/>
+                                    <constraint firstItem="UX3-tp-BCK" firstAttribute="top" secondItem="bIL-hy-77Z" secondAttribute="bottom" constant="43" id="kPY-Lv-uCc"/>
+                                    <constraint firstItem="bIL-hy-77Z" firstAttribute="top" secondItem="TXi-OB-kyb" secondAttribute="top" constant="154" id="mXt-KQ-8D1"/>
+                                    <constraint firstAttribute="bottom" secondItem="UX3-tp-BCK" secondAttribute="bottom" constant="302" id="qEM-od-Eq4"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="v93-Jb-b47"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="TXi-OB-kyb"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Xoe-u1-KPf" firstAttribute="leading" secondItem="gIw-8d-k9b" secondAttribute="leading" id="0qm-Ed-u33"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gIw-8d-k9b" secondAttribute="bottom" constant="65" id="1BW-0N-0rB"/>
+                            <constraint firstItem="gIw-8d-k9b" firstAttribute="top" secondItem="Xoe-u1-KPf" secondAttribute="bottom" constant="19" id="1GB-gF-v8x"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DCe-0z-3go" secondAttribute="bottom" constant="286" id="95i-Kc-8j5"/>
+                            <constraint firstItem="EPU-Zc-1iZ" firstAttribute="top" secondItem="gIw-8d-k9b" secondAttribute="top" id="Dxc-ee-2bv"/>
+                            <constraint firstItem="Xoe-u1-KPf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9" id="Exk-zW-8Xn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DCe-0z-3go" secondAttribute="trailing" constant="-38" id="NC5-LA-co4"/>
+                            <constraint firstItem="DCe-0z-3go" firstAttribute="trailing" secondItem="EPU-Zc-1iZ" secondAttribute="trailing" id="TaU-CV-4kl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tzi-9X-vl1" secondAttribute="bottom" constant="628" id="ZiI-v0-eC8"/>
+                            <constraint firstItem="EPU-Zc-1iZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bCD-zC-5KH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tzi-9X-vl1" secondAttribute="trailing" constant="-57" id="bUq-fZ-RAv"/>
+                            <constraint firstItem="Xoe-u1-KPf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="iOY-IP-50O"/>
+                            <constraint firstItem="tzi-9X-vl1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-35" id="nSe-DN-dNH"/>
+                            <constraint firstItem="tzi-9X-vl1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-59" id="ri0-FO-TYR"/>
+                            <constraint firstItem="DCe-0z-3go" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-44" id="rtw-bY-8tl"/>
+                            <constraint firstItem="Xoe-u1-KPf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tZK-UR-esl"/>
+                            <constraint firstItem="DCe-0z-3go" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-59" id="wLx-sl-pho"/>
+                            <constraint firstItem="Xoe-u1-KPf" firstAttribute="trailing" secondItem="gIw-8d-k9b" secondAttribute="trailing" id="yNo-wI-stP"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="EPU-Zc-1iZ" secondAttribute="bottom" constant="-34" id="yTt-Pn-Udy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="easy-pepperoni-pizza-lead-4.jpg" width="1600" height="2240"/>
+        <image name="fileadmin__processed__3_7_csm_0648_A4_Web_62782a12df.jpeg" width="566" height="800"/>
+    </resources>
+</document>
